@@ -1,11 +1,10 @@
 //
 //  ViewController.swift
-//  ToDoApp
+//  TodoApp
 //
-//  Created by Sasakura Hirofumi on 2017/06/03.
+//  Created by Sasakura Hirofumi on 2017/06/04.
 //  Copyright © 2017 Sasakura Hirofumi. All rights reserved.
-//  HirofumiSasakura Kasahara
-//  HirofumiSasakura44
+//
 
 import UIKit
 
