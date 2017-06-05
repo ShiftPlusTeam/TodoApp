@@ -13,6 +13,8 @@
 		7E36099E1EE3B9310068992A /* TodoApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7E36099C1EE3B9310068992A /* TodoApp.xcdatamodeld */; };
 		7E3609A01EE3B9310068992A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E36099F1EE3B9310068992A /* Assets.xcassets */; };
 		7E3609A31EE3B9310068992A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E3609A11EE3B9310068992A /* LaunchScreen.storyboard */; };
+		7E3609AC1EE5A0930068992A /* Todo+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3609AA1EE5A0930068992A /* Todo+CoreDataClass.swift */; };
+		7E3609AD1EE5A0930068992A /* Todo+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3609AB1EE5A0930068992A /* Todo+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		7E36099F1EE3B9310068992A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7E3609A21EE3B9310068992A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7E3609A41EE3B9310068992A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E3609AA1EE5A0930068992A /* Todo+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Todo+CoreDataClass.swift"; sourceTree = "<group>"; };
+		7E3609AB1EE5A0930068992A /* Todo+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Todo+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +44,8 @@
 		7E3609891EE3B9310068992A = {
 			isa = PBXGroup;
 			children = (
+				7E3609AA1EE5A0930068992A /* Todo+CoreDataClass.swift */,
+				7E3609AB1EE5A0930068992A /* Todo+CoreDataProperties.swift */,
 				7E3609941EE3B9310068992A /* TodoApp */,
 				7E3609931EE3B9310068992A /* Products */,
 			);
@@ -141,8 +147,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				7E3609981EE3B9310068992A /* ViewController.swift in Sources */,
+				7E3609AC1EE5A0930068992A /* Todo+CoreDataClass.swift in Sources */,
 				7E36099E1EE3B9310068992A /* TodoApp.xcdatamodeld in Sources */,
 				7E3609961EE3B9310068992A /* AppDelegate.swift in Sources */,
+				7E3609AD1EE5A0930068992A /* Todo+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
