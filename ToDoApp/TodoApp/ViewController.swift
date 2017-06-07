@@ -7,9 +7,16 @@
 //
 
 import UIKit
+import CoreData
+
 
 class ViewController: UIViewController {
-
+    
+    //CoerDataに関する各種情報を設定
+    let ENTITY_NAME = "Todo"
+    let ITEM_NAME = "text"
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
