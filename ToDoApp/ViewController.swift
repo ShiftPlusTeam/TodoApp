@@ -63,6 +63,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         return cell
     }
     
+    @IBAction func taskadd(_ sender: UIButton) {
+        myTasks.add("addtask")
+        taskbord.reloadData()
+    }
+    
+    
 }
 
 
