@@ -11,7 +11,7 @@ import UIKit
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     //@IBOutlet var taskbord: [UItableView]!
-    var myTasks: NSMutableArray = ["1" , "2" , "3" , "4"]
+    var myTasks: NSMutableArray = ["1" , "2" , "3" , "4" , "5"]
     var taskbord: UITableView!
     
     //@IBOutlet weak var taskbord: UITableView!
