@@ -102,10 +102,23 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             print(error)
         }
     }
-
+    
+    //セルが選択された時に呼び出されるメソッド
+    //作成者 : Hirofumi
+    //作成日 : 2017/6/20
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("Num: \(indexPath.row)")
         print("Value: \(taskDataArray[indexPath.row])")
+        
+        //選択したセル
+        let cell = tableView.cellForRow(at: indexPath)
+        
+        //チェックマークを入れる
+        if cell?.accessoryType == .checkmark {
+            cell?.accessoryType = .none
+        } else {
+            cell?.accessoryType = .checkmark
+        }
     }
 
     //セルの総数取得
