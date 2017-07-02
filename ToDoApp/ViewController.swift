@@ -46,10 +46,19 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         // Dispose of any resources that can be recreated.
     }
 
+    //セルが選択された時に呼び出されるメソッド
+    //作成者 : Hirofumi
+    //作成日 : 2017/6/20
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("Num: \(indexPath.row)")
-        print("Value: \(model.getData()[indexPath.row])")
+        print("tp_Num: \(indexPath.row)")
+        //print("Value: \(model.getData()[indexPath.row])")
+        
+        model.dataChange(indexPath.row)
+        self.model.dataLoad()
+        self.taskbord.reloadData()
+
     }
+
     
     //セルがスワイプされた時に呼び出されるメソッド
     //作成者 : Hirofumi
@@ -57,6 +66,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt  indexPath: IndexPath) {
         if editingStyle == .delete {
             //ここに処理を記載する
+            print("sw_Num: \(indexPath.row)")
+            model.dataDelete(indexPath.row)
+            self.model.dataLoad()
+            self.taskbord.reloadData()
+            
         }
     }
     
@@ -71,6 +85,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let cell = tableView.dequeueReusableCell(withIdentifier: "taskbord", for: indexPath as IndexPath)
         
         cell.textLabel!.text = "\(model.getData()[indexPath.row])"
+        
+        if model.getDoneYet()[indexPath.row] as! Bool{
+            cell.accessoryType = .none
+        } else {
+            cell.accessoryType = .checkmark
+        }
+
         return cell
     }
     
@@ -93,9 +114,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                         print("test\(taskText!)")
                         if (taskText == ""){
                             print("cansel")
-                        }
-                        else if (taskText == "alldelete"){
-                            self.model.dataAllDelete()
                         }else{
                             self.model.dataAdd(textField.text!)
                         }
