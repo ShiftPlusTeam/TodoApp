@@ -50,6 +50,16 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         print("Num: \(indexPath.row)")
         print("Value: \(model.getData()[indexPath.row])")
     }
+    
+    //セルがスワイプされた時に呼び出されるメソッド
+    //作成者 : Hirofumi
+    //作成日 : 2017/6/26
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt  indexPath: IndexPath) {
+        if editingStyle == .delete {
+            //ここに処理を記載する
+        }
+    }
+    
 
     //セルの総数取得
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

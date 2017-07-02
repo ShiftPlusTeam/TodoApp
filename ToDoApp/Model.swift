@@ -38,7 +38,7 @@ class Model {
         }
     }
     
-    //coredataのデータ書き換え
+    //coredataのデータ(taskyet)書き換え
     func dataChange(_ fromDataNo: intmax_t , _ toData: String){
         
     }
@@ -72,6 +72,7 @@ class Model {
     func dataAdd (_ addstr: String) {
         let taskdata = TaskData(context: context)
         taskdata.taskname = addstr
+        taskdata.taskyet = true
         do{
             try context.save()
         }catch{
