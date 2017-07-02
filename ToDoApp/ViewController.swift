@@ -64,11 +64,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         return cell
     }
     
-    //func tableView(_ tableView: UITableView, editAtionsForRowAtIndexPath indexPath: NSIndexPath) -> [AnyObject]?{
-    //    let deleteButton: UITableViewRowAction = UITableViewRowAction(style: .default, title: "削除"){(action, indexPath) in print("\(indexPath) deldeted")}
-    //    return [deleteButton]
-    //}
-    
     //「＋」ボタン押下時のアクション
     @IBAction func taskadd(_ sender: UIButton) {
         

@@ -50,7 +50,7 @@ class Model {
     
     //coredateのデータ全削除
     func dataAllDelete() {
-        let predicate = NSPredicate(format: "%K LIKE %@", "*" , "*")
+        let predicate = NSPredicate(format: "%K LIKE %@", "taskname" , "*")
         fetchRequest.predicate = predicate
         let fetchData = try! context.fetch(fetchRequest)
         if(!fetchData.isEmpty){
