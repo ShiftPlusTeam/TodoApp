@@ -1,4 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="12141" systemVersion="16D30" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <elements/>
+    <entity name="TaskData" representedClassName="TaskData" syncable="YES" codeGenerationType="class">
+        <attribute name="add" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="taskname" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="taskyet" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="TaskData" positionX="-63" positionY="-18" width="128" height="30"/>
+    </elements>
 </model>
